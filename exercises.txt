@@ -1,0 +1,51 @@
+Exercise 1: Get the current date and time 
+1. Create a new Date object and assign it a variable.
+2. Show the date and time in the console.
+
+Exercise 2: Show the current date in the header 
+1. To clean up the date formatting, run the .toLocaleDateString() method on the date and pass it 'en-us', plus an object with format options for weekday, year, month, and day. Choose options from: long, short, or numeric.
+2. Use the textContent property to show the formatted date in the #current-date span tag (there is already a variable assigned to the tag).
+
+Exercise 3: Add a time stamp to each todo item
+1. Create a new date object and run the .toLocaleString() method on it
+2. In the template literal value for newListItem.innerHTML, add a p tag with class time-stamp to show the timeStamp
+
+Exercise 4: Save the to-do list in local storage
+1. Create a function called saveTodoList
+2. Inside the function, create a variable: toDoItems
+Use the .children property to set its value (it gets an HTML collection of the <li> tags inside the <ol>, a variable has already been assigned to the <ol>, scroll up to see it.)
+3. Create a for - of loop to iterate through toDoItems
+4. Inside the for loop:
+Create a variable: id and set its value using the id property
+Create a variable: content and set its value using innerHTML property
+Run .setItem() and pass it the id and content variables
+5. To save every time you make a new to-do:
+Inside the form event handler function, after all the other code has run, 
+call the saveToDoList function 
+
+Exercise 5: Show the to-do list from local storage
+1. Create a function called showTodoList
+2. Inside the function, create a variable: keys, use Object.keys() to set its value to an array of keys
+Note: We can only show to-dos if there are any in Local Storage.
+3. Create a variable: total, use Object.keys() and the length property to set its value to the total number of to-dos
+4. Create an if statemnet to check if total is greater than 1
+5. Inside the if statement, create a for - of loop to iterate through the keys
+6. Inside the for loop:
+Create an li tag for the to-do
+Set the id of the li to key
+Use getItem() to set the innerHTML of the li
+Prepend the li to the ol using .prepend()
+7. Call the function
+
+Exercise 6: Activate function done and remove done items from storage 
+1. Inside function showToDoList, inside the for loop, before we prepend the to-do:
+Add a click event listener to the li to call the done function
+2. Inside function done:
+Use the this keyword and the id property to get the item's unique id
+Use .removeItem() to remove the done to-do from Local Storage, pass it the id
+
+Exercise 7:  Make the clear all button work
+1. Select the button and assign it a variable
+2. Add a click event listener to it and pass the event listener an arrow function
+3. Inside the arrow function, run the .clear() method and reload the page using 
+location.reload()

@@ -1,0 +1,106 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100%;
+    overflow: auto;
+    text-align: center;
+    background-color: #d2a000;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    padding: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 900;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.1em;
+    font-size: 3.5em;
+}
+
+header {
+    padding: 30px;
+}
+
+#current-date {
+    font-size: .6em;
+}
+
+main {
+    margin: auto;
+    max-width: 800px;
+}
+
+form {
+    margin: 0 auto 30px auto;
+    max-width: 380px;
+    text-align: left;
+}
+
+.input {
+    max-width: 300px;
+}
+
+button {
+    font-weight: bold;
+}
+
+form .button {
+    display: inline;
+    margin-left: 5px;
+}
+
+ol {
+    list-style-position: outside;
+    margin: 40px auto;
+    max-width: 500px;
+}
+
+li {
+    margin-bottom: 20px;
+    padding: 20px 40px;
+    border: solid 5px #f2d56e;
+    border-radius: 15px;
+    background-color: #fce184;
+    text-align: left;
+    line-height: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px #555;
+    cursor: pointer;
+}
+
+li.done {
+    background-color: #c1c1c1;
+    text-decoration: line-through;
+}
+
+li::marker {
+    font-size: 1.5rem;
+    color: #fce184;
+}
+
+.time-stamp {
+    color: #777;
+    margin-top: 15px;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 0.9rem;
+}
